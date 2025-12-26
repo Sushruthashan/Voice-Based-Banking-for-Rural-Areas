@@ -1,0 +1,19 @@
+{
+  "scriptFile": "function_app.py",
+  "entryPoint": "fill_word_main",
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "methods": ["post"],
+      "name": "req",
+      "route": "fill-word"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "$return"
+    }
+  ]
+}
